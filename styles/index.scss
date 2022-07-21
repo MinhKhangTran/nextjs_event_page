@@ -1,22 +1,21 @@
 // load custom font from google fonts
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;700&display=swap");
 
 @import "~bootstrap/scss/functions";
 // redefine variables not dependent on anything else
 
 // global variables
-$primary: #4d7c0f;
-$secondary: #f5fff0;
-$warning: #365314;
-$info: #456440;
-$light: #ffffff;
-$dark: #18181b;
+$primary: #ef4444;
+$secondary: #fca5a5;
+$info: #292524;
+$light: #fee2e2;
+$dark: #1c1917;
 
 // theme color variables
 
 // font family
-$headings-font-family: "Oswald", sans-serif;
-$font-family-base: "Poppins", sans-serif;
+$headings-font-family: "Rubik", sans-serif;
+$font-family-base: "Inter", sans-serif;
 
 // links
 
