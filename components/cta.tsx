@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Form from 'react-bootstrap/Form';
+import { Form, Button } from "react-bootstrap";
 
 const ctaContent = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ac aliquet morbi accumsan, arcu ullamcorper purus.",
