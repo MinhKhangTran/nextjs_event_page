@@ -1,5 +1,200 @@
 @use "sass:math";
 
 #hero {
- background-color: $secondary;
+  background-color: $secondary;
+  min-height: calc(100vh - 64px);
+  .hero__wrapper {
+    padding-top: 2rem;
+    position: relative;
+    z-index: 40;
+    @include md {
+      height: calc(100vh - 64px);
+      padding-block: 5rem;
+    }
+    &--left {
+      @include lg {
+        width: 50%;
+      }
+      .time_and_location__wrapper {
+        gap: 1rem;
+        padding-block: 1rem;
+        @include lg {
+          gap: 2rem;
+          padding-block: 2rem;
+        }
+      }
+      button {
+        color: #fff;
+      }
+    }
+    &--right {
+      padding-top: 3rem;
+      @include lg {
+        width: 50%;
+        padding-top: 0;
+      }
+      span {
+        @include md {
+          height: 400px !important;
+          aspect-ratio: 1;
+        }
+        @include lg {
+          height: auto !important;
+          width: 600px;
+          aspect-ratio: initial;
+        }
+      }
+    }
+  }
+  .bibimbap {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-19.44deg);
+    left: 8px;
+    top: -6px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 90px;
+      top: 253.58px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 90px;
+      top: 253.58px;
+    }
+  }
+  .empanada {
+    width: 80px;
+    height: 80px;
+    transform: rotate(9.9deg);
+    left: 277px;
+    top: 136px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 277px;
+      top: 136px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 1187.05px;
+      top: 136px;
+    }
+  }
+  .fast-food {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-12.2deg);
+    left: 268px;
+    top: 340px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 688px;
+      top: 200.13px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 688px;
+      top: 200.13px;
+    }
+  }
+  .greek-yogurt {
+    width: 80px;
+    height: 80px;
+    transform: rotate(28.55deg);
+    left: 188.65px;
+    top: 729px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 188.65px;
+      top: 759px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 188.65px;
+      top: 759px;
+    }
+  }
+  .pita {
+    width: 80px;
+    height: 80px;
+    transform: rotate(21.66deg);
+    left: 7px;
+    top: 687px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 1177.1px;
+      top: 847px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 1177.1px;
+      top: 847px;
+    }
+  }
+  .pizza {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-11.96deg);
+    left: -25px;
+    top: 498px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 674.69px;
+      top: 698.07px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 674.69px;
+      top: 698.07px;
+    }
+  }
+  .spaguetti {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-9.11deg);
+    left: 29px;
+    top: 318px;
+    @include lg {
+      width: 104px;
+      height: 104px;
+      left: 419px;
+      top: 558.06px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 419px;
+      top: 558.06px;
+    }
+  }
+  .tteok {
+    width: 80px;
+    height: 80px;
+    left: 110px;
+    top: 83px;
+    @include md {
+      width: 104px;
+      height: 104px;
+      left: 1242px;
+      top: 493px;
+    }
+    @include lg {
+      width: 128px;
+      height: 128px;
+      left: 1242px;
+      top: 493px;
+    }
+  }
 }

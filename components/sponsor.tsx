@@ -1,45 +1,36 @@
 const sponsorArray = [
-    {
-      id: 1,
-      thumb: "rennende-schuhe.svg",
-      altText: "Ein Bild von Peter Kim",
-      title: "Peter Kim",
-      essen: "Koreanisches Essen",
-      text: "Cat ipsum dolor sit amet, malkin yet ocicat. Tomcat donskoy. Kitten. Havana brown russian blue lion turkish angora british shorthair, egyptian mau. Persian tomcat himalayan kitty. Thai sphynx british shorthair yet kitten burmese.",
-    },
-    {
-      id: 2,
-      thumb: janeDoe,
-      altText: "Ein Bild von Jane Doe",
-      title: "Jane Doe",
-      essen: "Amerikanisches Essen",
-      text: "Ocelot ragdoll or norwegian forest cougar, tiger or tabby kitten. Abyssinian munchkin so devonshire rex. British shorthair ocicat but kitten. Malkin kitten and american shorthair maine coon leopard. ",
-    },
-    {
-      id: 3,
-      thumb: cathyBaros,
-      altText: "Ein Bild von Cathy Baros",
-      title: "Cathy Baros",
-      essen: "Griechisches Essen",
-      text: "Jaguar siberian so puma but ragdoll yet ragdoll lion scottish fold. Leopard. Tiger scottish fold or persian thai munchkin. Devonshire rex abyssinian panther norwegian forest lynx. Panther norwegian forest burmese and balinese . American shorthair.",
-    },
-    {
-      id: 4,
-      thumb: albertoRossi,
-      altText: "Ein Bild von Alberto Rossi",
-      title: "Alberto Rossi",
-      essen: "Italienisches Essen",
-      text: "American shorthair turkish angora or kitty, or malkin bengal. Panther abyssinian , for lynx. Bengal norwegian forest. Panther ocicat so ocicat tiger tabby. Tomcat egyptian mau yet panther, leopard or jaguar. Cornish rex himalayan and cornish rex for bengal but jaguar yet burmese yet bengal.",
-    }
-  ];
-
+  {
+    id: 1,
+    image: "rennende-schuhe.svg",
+    altText: "Logo von Rennende Schuhe",
+    color: "#dc3545",
+  },
+  {
+    id: 2,
+    image: "veganismus.svg",
+    altText: "Logo von Veganismus",
+    color: "#198754",
+  },
+  {
+    id: 3,
+    image: "amazing-blenders.svg",
+    altText: "Logo von Amazing Blenders",
+    color: "#0d6efd",
+  },
+  {
+    id: 4,
+    image: "mkt-webdesign.svg",
+    altText: "Logo von MKT Webdesign",
+    color: "#A97155",
+  },
+];
 
 const Sponsor = () => {
-    return (
-        <section className="" id="sponsor" aria-label="sponsor Abschnitt">
-                Sponsor
-        </section>  
-            );
-        };
+  return (
+    <section className="" id="sponsor" aria-label="sponsor Abschnitt">
+      Sponsor
+    </section>
+  );
+};
 
 export default Sponsor;
