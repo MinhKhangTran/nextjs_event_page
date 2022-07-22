@@ -11,7 +11,7 @@ const CTA = () => {
 
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event:any) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
