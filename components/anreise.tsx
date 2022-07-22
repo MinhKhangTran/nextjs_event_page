@@ -1,3 +1,5 @@
+import { Col, Row } from "react-bootstrap";
+
 const anreiseArray = [
   {
     id: 1,
@@ -28,7 +30,26 @@ const anreiseArray = [
 const Anreise = () => {
   return (
     <section className="" id="anreise" aria-label="anreise Abschnitt">
-      Anreise
+      <h2 className="heading-2 | text-center">Bequeme Anreise</h2>
+      <Row>
+        {scheduleArray.map((item)=>{
+          return(
+            <Col md={6} key={item.id}>
+              <article>
+              <picture>
+                <img src={`/images/${item.image}`} alt={item.title} aria-hidden="true" />
+              </picture>
+              <h3 className="heading-3">
+                {item.title}
+              </h3>
+              <p>
+                {item.text}
+              </p>
+              </article>
+            </Col>
+          )
+        })}
+      </Row>
     </section>
   );
 };

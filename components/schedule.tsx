@@ -4,6 +4,8 @@ import aufbau from "../public/images/aufbau.jpg";
 import liveMusic from "../public/images/live-music.jpg";
 import abschiedFeuerwerk from "../public/images/abschied-feuerwerk.jpg";
 
+
+
 const scheduleArray = [
   {
     id: 1,
