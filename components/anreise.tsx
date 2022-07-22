@@ -29,7 +29,7 @@ const anreiseArray = [
 
 const Anreise = () => {
   return (
-    <section className="" id="anreise" aria-label="anreise Abschnitt">
+    <section className="wrapper" id="anreise" aria-label="anreise Abschnitt">
       <h2 className="heading-2 | text-center">Bequeme Anreise</h2>
       <Row>
         {anreiseArray.map((item)=>{
