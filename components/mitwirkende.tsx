@@ -45,7 +45,7 @@ const mitwirkendeArray = [
 const Mitwirkende = () => {
     return (
         <section className="wrapper" id="mitwirkende" aria-label="mitwirkende Abschnitt">
-                <h2 className="heading-2">Hautpmitwirkende</h2>
+                <h2 className="heading-2 | text-center">Hautpmitwirkende</h2>
           <Row>
 {mitwirkendeArray.map((person)=>{
   return(

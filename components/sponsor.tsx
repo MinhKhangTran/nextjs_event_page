@@ -1,3 +1,5 @@
+import { Col, Row } from "react-bootstrap";
+
 const sponsorArray = [
   {
     id: 1,
@@ -27,8 +29,18 @@ const sponsorArray = [
 
 const Sponsor = () => {
   return (
-    <section className="" id="sponsor" aria-label="sponsor Abschnitt">
-      Sponsor
+    <section className="wrapper" id="sponsor" aria-label="sponsor Abschnitt">
+      <Row>
+        {sponsorArray.map((sponsor)=>{
+          return(
+            <Col lg={3} md={4} key={sponsor.id}>
+                <picture>
+                  <img src={`/images/${sponsor.image}`} alt={sponsor.altText} />
+                </picture>
+            </Col>
+          )
+        })}
+      </Row>
     </section>
   );
 };
