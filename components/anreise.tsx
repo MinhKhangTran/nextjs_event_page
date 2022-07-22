@@ -32,7 +32,7 @@ const Anreise = () => {
     <section className="" id="anreise" aria-label="anreise Abschnitt">
       <h2 className="heading-2 | text-center">Bequeme Anreise</h2>
       <Row>
-        {scheduleArray.map((item)=>{
+        {anreiseArray.map((item)=>{
           return(
             <Col md={6} key={item.id}>
               <article>
