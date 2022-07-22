@@ -2,4 +2,9 @@
 
 #about {
  background-color: #fafafa;
+ margin-top: math.div(64rem, 16);
+@include lg {
+  margin-top: math.div(104rem, 16);
 }
+}
+

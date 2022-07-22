@@ -4,6 +4,7 @@ import peterKim from "../public/images/peter-kim.png";
 import janeDoe from "../public/images/jane-doe.png";
 import cathyBaros from "../public/images/cathy-baros.png";
 import albertoRossi from "../public/images/alberto-rossi.png";
+import { Col, Row } from "react-bootstrap";
 
 
 const mitwirkendeArray = [
@@ -44,7 +45,41 @@ const mitwirkendeArray = [
 const Mitwirkende = () => {
     return (
         <section className="" id="mitwirkende" aria-label="mitwirkende Abschnitt">
-                Mitwirkende
+                <h2 className="heading-2">Hautpmitwirkende</h2>
+          <Row>
+{mitwirkendeArray.map((person)=>{
+  return(
+<Col key={person.id} md={6}>
+    <article className="mitwirkende__wrapper">
+    <Image
+            src={person.thumb}
+            alt={person.altText}
+            className="img-fluid"
+            placeholder="blur"
+            priority
+          />
+          <div className="mitwirkende__wrapper--bio">
+        <h3 className="heading-3">
+          {person.title}
+        </h3>
+        <p className="food">
+          {person.essen}
+        </p>
+        <p>
+          {person.text}
+        </p>
+        <a href="https://instagram.com">
+
+        <img src="/images/instagram.svg" aria-hidden="true" alt="instagram" />
+        </a>
+
+          </div>
+    </article>
+</Col>
+  )
+})}
+            
+          </Row>
         </section>  
             );
         };
