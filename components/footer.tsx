@@ -19,7 +19,7 @@ const socials = [
   },
   {
     id: 3,
-    image: "tik-tok.svg",
+    image: "tiktok.svg",
     title: "Tik Tok",
     url: "https://www.tiktok.com/",
   },
