@@ -95,11 +95,13 @@ const Hero = () => {
               );
             })}
           </div>
-          <Link className="" href="/#countdown" passHref>
-            <Button size="lg" variant="primary">
-              {heroContent.btnText}
-            </Button>
-          </Link>
+          <div className="d-grid d-lg-flex">
+            <Link className="" href="/#countdown" passHref>
+              <Button size="lg" variant="primary">
+                {heroContent.btnText}
+              </Button>
+            </Link>
+          </div>
         </div>
         <div className="hero__wrapper--right">
           <Image

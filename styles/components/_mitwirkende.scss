@@ -1,9 +1,33 @@
 @use "sass:math";
 
 #mitwirkende {
- background-color: #fafafa;
- margin-top: math.div(64rem, 16);
- @include lg {
-   margin-top: math.div(104rem, 16);
- }
+  background-color: #fafafa;
+  margin-top: math.div(64rem, 16);
+  @include lg {
+    margin-top: math.div(104rem, 16);
+  }
+  .mitwirkende__wrapper {
+    gap: math.div(20rem, 16);
+    &--img {
+      width: 100%;
+      @include lg {
+        width: 50%;
+      }
+    }
+    &--bio {
+      width: 100%;
+      @include lg {
+        width: 50%;
+      }
+      .food {
+        font-weight: 600;
+        color: #44403c;
+      }
+      .bio {
+        line-height: 150%;
+        color: #44403c;
+        padding-block: 1rem;
+      }
+    }
+  }
 }
