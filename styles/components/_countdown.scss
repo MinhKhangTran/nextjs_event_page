@@ -1,5 +1,31 @@
 @use "sass:math";
 
 #countdown {
- background-color: $light;
+  background-color: $light;
+  padding-block: math.div(32rem, 16);
+  @include lg {
+    padding-block: math.div(64rem, 16);
+  }
+  h2 {
+    padding-bottom: 1.5rem;
+  }
+  .clock {
+    gap: 1.5rem;
+    @include lg {
+      gap: math.div(112rem, 16);
+    }
+  }
+  .countdown__number {
+    font-size: math.div(40rem, 16);
+    font-family: Rubik;
+    @include lg {
+      font-size: math.div(96rem, 16);
+    }
+  }
+  small {
+    font-size: math.div(14rem, 16);
+    @include lg {
+      font-size: math.div(24rem, 16);
+    }
+  }
 }
