@@ -32,47 +32,45 @@ const socials = [
 ];
 
 const Footer = () => {
-  return <footer>
-    <div className="wrapper">
-
-      <section>
-
-      <div className="logo">
-
-
-      <Link href="/">
-<a>
-
-    <picture>
-      <img src="/images/Logo.svg" alt="Logo von Food Truck Fest" />
-    </picture>
-  </a>
-    </Link>
-      </div>
-      <div className="contact">
-        <h2>
-          {footerContent.title}
-        </h2>
-        <p>
-          {footerContent.text}
-        </p>
-
-      </div>
-      <div className="socials | d-flex">
-        {socials.map((social)=>{
-          return(
-            <a key={social.id} href={social.url}>
-              <img src={`/images/${social.image}`} alt={social.title} aria-hidden="true" />
-            </a>
-          )
-        })}
-      </div>
-          </section>
-          <p className="text-center">
+  return (
+    <footer>
+      <div className="wrapper">
+        <section>
+          <div className="logo">
+            <Link href="/">
+              <a>
+                <picture>
+                  <img src="/images/Logo.svg" alt="Logo von Food Truck Fest" />
+                </picture>
+              </a>
+            </Link>
+          </div>
+          <div className="contact">
+            <h2>{footerContent.title}</h2>
+            <p>{footerContent.text}</p>
+          </div>
+          <div className="socials | d-flex">
+            {socials.map((social) => {
+              return (
+                <a key={social.id} href={social.url}>
+                  <picture>
+                    <img
+                      src={`/images/${social.image}`}
+                      alt={social.title}
+                      aria-hidden="true"
+                    />
+                  </picture>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+        <p className="text-center">
           ©{new Date().getFullYear()} Food Truck Fest. Alle Rechte vorbehalten.
-          </p>
-    </div>
-  </footer>;
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

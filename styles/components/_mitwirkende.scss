@@ -6,6 +6,20 @@
   @include lg {
     margin-top: math.div(104rem, 16);
   }
+  .mitwirkende__1,
+  .mitwirkende__2 {
+    padding-top: 2rem;
+    @include lg {
+      padding-top: 2rem;
+    }
+  }
+  .mitwirkende__3,
+  .mitwirkende__4 {
+    padding-top: math.div(32rem, 16);
+    @include lg {
+      padding-top: math.div(64rem, 16);
+    }
+  }
   .mitwirkende__wrapper {
     gap: math.div(20rem, 16);
     &--img {

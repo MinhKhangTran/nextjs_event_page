@@ -52,7 +52,7 @@ const Mitwirkende = () => {
       <Row>
         {mitwirkendeArray.map((person) => {
           return (
-            <Col key={person.id} md={6}>
+            <Col key={person.id} md={6} className={`mitwirkende__${person.id}`}>
               <article className="mitwirkende__wrapper | d-flex flex-column flex-lg-row">
                 <div className="mitwirkende__wrapper--img">
                   <Image
