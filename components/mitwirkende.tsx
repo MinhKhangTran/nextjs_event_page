@@ -67,7 +67,7 @@ const Mitwirkende = () => {
                   <h3 className="heading-3">{person.title}</h3>
                   <p className="food">{person.essen}</p>
                   <p className="bio">{person.text}</p>
-                  <a href="https://instagram.com">
+                  <a aria-label="instagram" href="https://instagram.com">
                     <picture>
                       <img
                         src="/images/instagram.svg"

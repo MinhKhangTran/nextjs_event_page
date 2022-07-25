@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="socials | d-flex">
             {socials.map((social) => {
               return (
-                <a key={social.id} href={social.url}>
+                <a aria-label={social.title} key={social.id} href={social.url}>
                   <picture>
                     <img
                       src={`/images/${social.image}`}

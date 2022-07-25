@@ -1,9 +1,15 @@
 @use "sass:math";
 
 #schedule {
- background-color: #fafafa;
- margin-top: math.div(64rem, 16);
- @include lg {
-   margin-top: math.div(104rem, 16);
- }
+  background-color: #fafafa;
+  margin-top: math.div(64rem, 16);
+  @include lg {
+    margin-top: math.div(104rem, 16);
+  }
+  .nav-pills {
+    --bs-nav-pills-link-active-bg: #d73c3c;
+  }
+  .nav-link {
+    --bs-nav-link-color: #cc3939;
+  }
 }

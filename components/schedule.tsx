@@ -12,24 +12,24 @@ const scheduleArray = [
     thumb: aufbau,
     altText: "Aufbau des Food Truck Fest",
     title: "Aufbau des Food Truck Fest",
-    date: "08.08.2022",
-    text: "I'm baby squid kogi fixie, roof party cardigan gentrify af PBR&B hammock scenester. Locavore drinking vinegar listicle, narwhal farm-to-table heirloom cornhole activated charcoal wolf hot chicken palo santo. Occupy air plant vinyl bushwick, butcher food truck vice mumblecore snackwave distillery farm-to-table brunch keffiyeh DSA. Pork belly vape cold-pressed franzen lomo, seitan yr pitchfork gentrify glossier swag whatever snackwave brunch. Flexitarian mustache venmo vexillologist. Helvetica kinfolk bushwick narwhal vice iPhone kale chips kogi succulents dreamcatcher swag keffiyeh.",
+    date: "08.08",
+    text: "Distillery tofu umami tilde brooklyn fingerstache stumptown shaman scenester lo-fi organic ramps wayfarers. Williamsburg raclette synth, jean shorts street art pok pok pop-up tote bag beard lo-fi ugh paleo post-ironic keytar. ",
   },
   {
     id: 2,
     thumb: liveMusic,
     altText: "Live Musik",
     title: "Live Musik mit lokalen Bands and Sänger*innen",
-    date: "09.08.2022",
-    text: "I'm baby squid kogi fixie, roof party cardigan gentrify af PBR&B hammock scenester. Locavore drinking vinegar listicle, narwhal farm-to-table heirloom cornhole activated charcoal wolf hot chicken palo santo. Occupy air plant vinyl bushwick, butcher food truck vice mumblecore snackwave distillery farm-to-table brunch keffiyeh DSA. Pork belly vape cold-pressed franzen lomo, seitan yr pitchfork gentrify glossier swag whatever snackwave brunch. Flexitarian mustache venmo vexillologist. Helvetica kinfolk bushwick narwhal vice iPhone kale chips kogi succulents dreamcatcher swag keffiyeh.",
+    date: "09.08",
+    text: "DSA glossier narwhal hell of drinking vinegar. Art party cliche four dollar toast blog, lomo kitsch pour-over prism semiotics locavore. Echo park organic praxis, kinfolk unicorn food truck cardigan occupy iceland.",
   },
   {
     id: 3,
     thumb: abschiedFeuerwerk,
     altText: "Abschied mit Feuerwerk",
     title: "Abschied mit einem schönen Feuerwerk",
-    date: "10.08.2022",
-    text: "I'm baby squid kogi fixie, roof party cardigan gentrify af PBR&B hammock scenester. Locavore drinking vinegar listicle, narwhal farm-to-table heirloom cornhole activated charcoal wolf hot chicken palo santo. Occupy air plant vinyl bushwick, butcher food truck vice mumblecore snackwave distillery farm-to-table brunch keffiyeh DSA. Pork belly vape cold-pressed franzen lomo, seitan yr pitchfork gentrify glossier swag whatever snackwave brunch. Flexitarian mustache venmo vexillologist. Helvetica kinfolk bushwick narwhal vice iPhone kale chips kogi succulents dreamcatcher swag keffiyeh.",
+    date: "10.08",
+    text: "Tonx twee actually pug farm-to-table subway tile try-hard DSA single-origin coffee godard tilde. Thundercats prism retro kickstarter banjo.",
   },
 ];
 
@@ -48,7 +48,7 @@ const Schedule = () => {
           />
         </Col>
         <Col md={6}>
-          <Tabs activeKey={index} onSelect={(k) => setIndex(k)}>
+          <Tabs variant="pills" activeKey={index} onSelect={(k) => setIndex(k)}>
             {scheduleArray.map((schedule) => {
               return (
                 <Tab
@@ -56,7 +56,7 @@ const Schedule = () => {
                   key={schedule.id}
                   title={schedule.date}
                 >
-                  <h3 className="heading-3">{schedule.title}</h3>
+                  <h3 className="heading-3 | pt-4 pb-2">{schedule.title}</h3>
                   <p>{schedule.text}</p>
                 </Tab>
               );
