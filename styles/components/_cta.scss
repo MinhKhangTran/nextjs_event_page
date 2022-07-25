@@ -4,7 +4,7 @@
   background-color: $secondary;
   margin-top: math.div(64rem, 16);
   padding-block: 2rem;
-  @include lg {
+  @include md {
     margin-top: math.div(104rem, 16);
     padding-block: 4rem;
   }

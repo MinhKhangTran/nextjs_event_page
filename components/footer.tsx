@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="wrapper">
-        <section>
+        <section className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="logo">
             <Link href="/">
               <a>
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
             </Link>
           </div>
-          <div className="contact">
+          <div className="contact text-center text-md-start">
             <h2>{footerContent.title}</h2>
             <p>{footerContent.text}</p>
           </div>
@@ -65,7 +65,7 @@ const Footer = () => {
             })}
           </div>
         </section>
-        <p className="text-center">
+        <p className="copyright | text-center">
           ©{new Date().getFullYear()} Food Truck Fest. Alle Rechte vorbehalten.
         </p>
       </div>

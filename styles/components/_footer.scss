@@ -1,5 +1,29 @@
 @use "sass:math";
 
 footer {
- background-color: #E7E5E4;
+  background-color: #e7e5e4;
+  section {
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include lg {
+      flex-wrap: nowrap;
+      gap: 0rem;
+    }
+    padding-block: 1.5rem 3rem;
+    .contact {
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+    .socials {
+      gap: 2rem;
+      @include lg {
+        gap: math.div(48rem, 16);
+      }
+    }
+  }
+  .copyright {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
 }
