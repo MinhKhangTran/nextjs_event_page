@@ -16,7 +16,7 @@ const heroContent = {
     {
       id: 1,
       icon: "calendar.svg",
-      text: "08. - 10.08.2022",
+      text: "08. - 10.08.2023",
     },
     {
       id: 2,

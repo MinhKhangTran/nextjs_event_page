@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Form, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Form, Button, Row, Col } from "react-bootstrap";
 
 const ctaContent = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ac aliquet morbi accumsan, arcu ullamcorper purus.",
@@ -8,39 +8,26 @@ const ctaContent = {
 };
 
 const CTA = () => {
-
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = (event:any) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
-  };
   return (
     <section className="" id="cta" aria-label="cta Abschnitt">
-      <h2>
-        {ctaContent.title}
-      </h2>
-      <p>{ctaContent.text}</p>
+      <h2 className="heading-1 | text-center">{ctaContent.title}</h2>
+      <p className="text-center">{ctaContent.text}</p>
 
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
-      
-        <Form.Control
-            required
-            type="text"
-            placeholder="E-Mail Adresse eingeben"
-       
-          />
-      <Form.Control.Feedback type="invalid">
-              Bitte eine E-Mail Adresse eingeben
-            </Form.Control.Feedback>
-            <Button type="submit">
-              {ctaContent.btnText}
-            </Button>
+      <Form className="">
+        <Row className="align-items-center">
+          <Col md="8">
+            <Form.Control
+              required
+              type="text"
+              placeholder="E-Mail Adresse eingeben"
+            />
+          </Col>
+          <Col md="4">
+            <div className="d-grid d-lg-flex pt-3 pt-md-0">
+              <Button type="submit">{ctaContent.btnText}</Button>
+            </div>
+          </Col>
+        </Row>
       </Form>
     </section>
   );

@@ -31,23 +31,32 @@ const Anreise = () => {
   return (
     <section className="wrapper" id="anreise" aria-label="anreise Abschnitt">
       <h2 className="heading-2 | text-center">Bequeme Anreise</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.4971930886554!2d10.0111142158946!3d48.4085983402243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799665c2a6d6087%3A0x933b5cdca37f8198!2sFriedrichsau!5e0!3m2!1sde!2sde!4v1658720228906!5m2!1sde!2sde"
+        width="100%"
+        height="450"
+        allowFullScreen={false}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        aria-label="map"
+      ></iframe>
       <Row>
-        {anreiseArray.map((item)=>{
-          return(
+        {anreiseArray.map((item) => {
+          return (
             <Col md={6} key={item.id}>
               <article>
-              <picture>
-                <img src={`/images/${item.image}`} alt={item.title} aria-hidden="true" />
-              </picture>
-              <h3 className="heading-3">
-                {item.title}
-              </h3>
-              <p>
-                {item.text}
-              </p>
+                <picture>
+                  <img
+                    src={`/images/${item.image}`}
+                    alt={item.title}
+                    aria-hidden="true"
+                  />
+                </picture>
+                <h3 className="heading-3">{item.title}</h3>
+                <p>{item.text}</p>
               </article>
             </Col>
-          )
+          );
         })}
       </Row>
     </section>

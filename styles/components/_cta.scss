@@ -1,5 +1,22 @@
 @use "sass:math";
 
 #cta {
- background-color: $secondary;
+  background-color: $secondary;
+  margin-top: math.div(64rem, 16);
+  padding-block: 2rem;
+  @include lg {
+    margin-top: math.div(104rem, 16);
+    padding-block: 4rem;
+  }
+  p {
+    padding-block: 1rem 2rem;
+    width: 90%;
+    max-width: 590px;
+    margin-inline: auto;
+  }
+  form {
+    width: 90%;
+    max-width: 675px;
+    margin-inline: auto;
+  }
 }
