@@ -48,7 +48,7 @@ const Mitwirkende = () => {
       id="mitwirkende"
       aria-label="mitwirkende Abschnitt"
     >
-      <h2 className="heading-2 | text-center">Hautpmitwirkende</h2>
+      <h2 className="heading-2 | text-center">Hauptmitwirkende</h2>
       <Row>
         {mitwirkendeArray.map((person) => {
           return (
