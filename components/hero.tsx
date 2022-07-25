@@ -10,7 +10,7 @@ import heroPic from "../public/images/hero.png";
 const heroContent = {
   altText:
     "Ein Bild von einer Frau in einem Food Truck, die eine Kundin bedient",
-  title: "Food Truck Fest 2022",
+  title: "Food Truck Fest 2023",
   btnText: "Erfahre mehr",
   time_and_location: [
     {
