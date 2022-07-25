@@ -48,7 +48,14 @@ const Schedule = () => {
           />
         </Col>
         <Col md={6}>
-          <Tabs variant="pills" activeKey={index} onSelect={(k) => setIndex(k)}>
+          <Tabs
+            variant="pills"
+            activeKey={index}
+            onSelect={(k) => {
+              // @ts-ignore: Unreachable code error
+              return setIndex(k);
+            }}
+          >
             {scheduleArray.map((schedule) => {
               return (
                 <Tab
