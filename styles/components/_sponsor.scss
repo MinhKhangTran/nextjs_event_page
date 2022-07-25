@@ -7,7 +7,6 @@
     margin-top: math.div(104rem, 16);
   }
   img {
-    width: 90%;
     @include md {
       width: auto;
     }

@@ -34,7 +34,7 @@ const Sponsor = () => {
         {sponsorArray.map((sponsor) => {
           return (
             <Col
-              className={`sponsor__${sponsor.id}`}
+              className={`sponsor__${sponsor.id} text-center text-md-start`}
               lg={3}
               md={4}
               key={sponsor.id}

@@ -43,7 +43,7 @@ const Anreise = () => {
       <Row>
         {anreiseArray.map((item) => {
           return (
-            <Col md={6} key={item.id}>
+            <Col md={6} key={item.id} className={`anreise__${item.id}`}>
               <article>
                 <picture>
                   <img
