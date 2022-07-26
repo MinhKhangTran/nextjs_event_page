@@ -9,12 +9,14 @@
   iframe {
     margin-block: 2rem;
   }
-  .anreise__2,
-  .anreise__3,
-  .anreise__4 {
+  .anreise__2 {
     padding-top: 2rem;
     @include md {
       padding-top: 0;
     }
+  }
+  .anreise__3,
+  .anreise__4 {
+    padding-top: 2rem;
   }
 }
